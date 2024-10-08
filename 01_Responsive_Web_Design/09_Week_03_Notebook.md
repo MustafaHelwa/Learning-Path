@@ -7,3 +7,74 @@
 ### HTML and CSS Step-by-Step Guide
 
 #### Basic Setup
+
+- Starting with the basic html and css code: 
+
+Html:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Accessibility Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+        <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp">
+        <h1> HTML/CSS Quiz</h1>
+        <nav></nav>
+    </header>
+    <main></main>
+  </body>
+</html>
+
+
+
+css:
+body {
+  background: #f5f6f7;
+  color: #1b1b32;
+  font-family: Helvetica;
+  margin: 0;
+}
+
+- use `#logo` selector to set a maximum width for it of `10rem` or `18vw`. Also, add color to the background, `aspect-ratio` of `35 / 4` and a `padding`:
+  #logo{
+  width: max(10rem, 18vw);
+  background-color: #0a0a23;
+  aspect-ratio: 35 / 4;
+  padding: 0.4rem; 
+  }
+
+- Now, use a `header` selector to adjust header styling as below:
+  header{
+  width: 100%;
+  height: 50px;
+  background-color: #1b1b32;
+  display: flex; 
+  }
+
+- Then, adjuts `h1` font size and color:
+  h1{ 
+  color: #f1be32; 
+  font-size: min(5vw, 1.2em);
+  }
+
+- Inside <nav> element, create an unordered list of three elements:
+        <nav>
+        <ul>
+          <li><a>INFO</a></li>
+          <li><a>HTML</a></li>
+          <li><a>CSS</a></li>
+          </ul>
+      </nav>
+
+- Use The child combinator selector `>` to target only elements that are matching the second selector and are **a direct** child of the first selector:
+  nav > ul{
+  justify-content: space-evenly;
+  display: flex;
+  }
+
+- 
