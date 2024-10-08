@@ -77,4 +77,65 @@ body {
   display: flex;
   }
 
+- inside the <main> element, insert a form that posts to the required link and make three sections within it:
+     <main>
+      
+        <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+          <section>
+            </section>
+            <section>
+              </section>
+              <section>
+                </section>
+          </form>
+        
+    </main>
+
+- Use `role` attribute to indicate the purpose of each element (WAI), make <section> role as `region`:
+          <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+        <section role="region"></section>
+        <section role="region"></section>
+        <section role="region"></section>
+      </form>
+
+- Add the following `aria-labelledby` attributes to the `section` elements with the needed <h2> elements for each :
+
+        <section role="region" aria-labelledby="student-info"><h2 id="student-info">Student Info</h2></section>
+        <section role="region" aria-labelledby="html-questions"><h2 id="html-questions">HTML</h2></section>
+        <section role="region" aria-labelledby="css-questions"><h2 id="css-questions">CSS</h2></section>
+
+- Set a `font-family` for <h1> and <h2>. Also, add a backup font next to it. Then add a bottom border below <h2>:
+  h1, h2{
+  font-family: Verdana Tahoma;
+    
+    }
+    h2{
+    border-bottom: 4px solid #dfdfe2;
+    }
+
+- Reference each <a> in the <li> element of <ul> list to the correspondent `id` using `href`:
+          <ul>
+          <li><a href="#student-info">INFO</a></li>
+          <li><a href="#html-questions">HTML</a></li>
+          <li><a href="#css-questions">CSS</a></li>
+          </ul>
+
+
+- Next, add three <div> elements and nest one <label> and one <input> elements within each <div>:
+          <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label></label>
+            <input />
+          </div>
+          <div class="info">
+            <label></label>
+            <input />
+          </div>
+          <div class="info">
+            <label></label>
+            <input />
+          </div>
+        </section>
+
 - 
