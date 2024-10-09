@@ -138,4 +138,56 @@ body {
           </div>
         </section>
 
+- Make a `for` attribute for each <label> element and link it with the corresponding <input> through `id` attribute:
+
+          <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label for="student-name">Name:</label>
+            <input id="student-name" />
+          </div>
+          <div class="info">
+            <label for="emailadd">Email:</label>
+            <input id="emailadd"/>
+          </div>
+          <div class="info">
+            <label for="dob">Date of Birth:</label>
+            <input id="dob"/>
+          </div>
+        </section>
+
+- Give a `name` attribute for each <input> element:
+
+          <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label for="student-name">Name:</label>
+            <input type="text" name="student-name" id="student-name" />
+          </div>
+          <div class="info">
+            <label for="student-email">Email:</label>
+            <input type="email" name="student-email" id="student-email" />
+          </div>
+          <div class="info">
+            <label for="birth-date">Date of Birth:</label>
+            <input type="date" name="birth-date" id="birth-date" />
+          </div>
+        </section>
+
+- Note that you can give a `placeholder` attribute for `Name` input:                  <input type="text" name="student-name" id="student-name" placeholder="e.g. Omar Ali" />
+- Add two <div> elements and number them using <h3> element, wrap the number with Append a <span> element with a `class` of `sr-only` to each of the <h3> elements. then add a <fieldset> below the number. Give them appropriate class:
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HTML</h2>
+          <div class="question-block">
+            <h3>1</h3>
+            <fieldset class="question"></fieldset>
+          </div>
+          <div class="question-block">
+            <h3>2</h3>
+            <fieldset class="question"></fieldset>
+          </div>
+        </section>
+              
+
 - 
