@@ -226,5 +226,88 @@ body {
               </ul>
 
 
-    - 
+    - Give each <input> element a `value` attribute matching the choice text:
+                    <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    
+                    <input type="radio" id="q1-a1" value="True"/> True
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" value="False"/> False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>2</h3>
+            <fieldset class="question" name="html-question-two">
+              <legend>
+                A label element nesting an input element is required to have a
+                for attribute with the same value as the input's id
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" value="True"/> True
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" value="False"/> False
+                  </label>
+                </li>
+              </ul>
+
+
+  - You will notice that you can pick 2 radio answers for the same question. To solve this problem, give the same `name` attribute for each 2 <input> elements:
+                  <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" value="true" name="q1a"/>
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" value="false" name="q1a"/>
+                    False
+                  </label>
+                </li>
+              </ul>
+
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>2</h3>
+            <fieldset class="question" name="html-question-two">
+              <legend>
+                A label element nesting an input element is required to have a
+                for attribute with the same value as the input's id
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" value="true" name="q2a"/>
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" value="false" name="q2a"/>
+                    False
+                  </label>
+                </li>
+              </ul>
+
+- target each `before` pseudo-element of <h3> element and give it a `content` of `"Question #"`:
+  h3::before {
+  content: "Question #";
+
+}
+
+- 
       
