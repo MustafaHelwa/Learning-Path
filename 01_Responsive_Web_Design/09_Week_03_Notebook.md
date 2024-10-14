@@ -309,5 +309,45 @@ body {
 
 }
 
+- Add 4 <div> elements for 2 questions and 2 answers in the last section, then nest them inside one <div>:
+          <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS</h2>
+            <div class="formrow">
+              <div class="question-block"></div>
+              <div class="answer"></div>
+              <div class="question-block"></div>
+              <div class="answer"></div>
+              </div>
+        </section>
+
+- inside each `question-block` add a <label> with a CSS related question then add a <select> element with a `required` attribute, then set 3 options as the following:
+              <div class="answer">
+              <select required>
+                <option value="" >Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                </select>
+            </div>
+
+- give <select> element a `name` and an `id` then link it to the <label> element using `for` attribute:
+              <div class="question-block">
+              <label for="selector">Can the CSS margin property accept negative values?</label>
+            </div>
+            <div class="answer">
+              <select name="selector" id="selector" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+
+- Add a `textarea` below the last question and give it a specific `rows` and `cols`:
+              <div class="question-block">
+              <label>Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea rows="5" cols="24"></textarea>
+            </div>
+
 - 
       
