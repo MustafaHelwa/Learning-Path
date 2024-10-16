@@ -349,5 +349,96 @@ body {
               <textarea rows="5" cols="24"></textarea>
             </div>
 
-- 
+- Link `textarea` to the corresponding <label> element and give it `name` attribute:
+              <div class="question-block">
+              <label for="textbox">Do you have any questions:</label>
+            </div>
+            <div class="answer" >
+              <textarea rows="5" cols="24" id="textbox" name="textbox"></textarea>
+            </div>
+
+- Add `send` button with type `submit`:
+  <button type="submit">Send</button>
+
+- Add an `address` to the `footer` and use `<br />` to add a new line:
+      <footer>
+      <address>
+        <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+        San Francisco<br />
+        California<br />
+        USA
+      </address>
+    </footer>
+
+- Note: that you can use the below code to add copyright with automatic year update:
+   <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> [Name] All Rights Reserved</p>
       
+- Select `list` elements inside `nav` bar and give it the below style:
+  nav li {
+  color: #dfdfe2;
+margin: 0 0.2rem;
+padding: 0.2rem;
+display: block;
+
+}
+
+- Note that you can use also `nac > ul > li` selector:
+
+- Change color of <a> element within `li`:
+  li a{
+  color: inherit;
+
+}
+
+- Change color, background color and cursor when hover over `nav li`:
+  nav li:hover{
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+}
+li > a {
+  color: inherit;
+  text-decoration: none;
+  }
+
+
+
+- Adjust header sytle to make it justified and centered:
+  header {
+  width: 100%;
+  height: 50px;
+  background-color: #1b1b32;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+
+}
+
+- Adjust <h1> to align text to the center and add a padding to the main body:
+  h1 {
+  color: #f1be32;
+  font-size: min(5vw, 1.2em);
+  text-align: center;
+}
+main {
+  padding-top: 25px;
+}
+
+- Wrap the `ul` `flexbox` and align it:
+  nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+align-items: center;
+padding-inline-start: 0;
+margin-block: 0;
+height: 100%;
+
+}
+
+
+- 
+
+
