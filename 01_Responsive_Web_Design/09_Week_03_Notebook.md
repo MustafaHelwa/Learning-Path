@@ -439,6 +439,127 @@ height: 100%;
 }
 
 
+- Adjust `section` margins to be representative:
+
+
+  section{
+  width: 80%; 
+  margin: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 600px;
+}
+
+- Replace the top margin of <h2> with a padding of `60px`:
+  h2 {
+  border-bottom: 4px solid #dfdfe2;
+  margin-top: 0;
+  padding-top: 60px;
+
+}
+
+- add padding to `.info`:
+ .info{ 
+  padding-right: 0;
+  padding-top: 1px;
+  padding-bottom: 0;
+  padding-left: 1px;
+}
+
+- adjust `.formrow` margins and paddings then give `input` a font size of `13px`:
+  .formrow { 
+  margin: 0; 
+  margin-top: 10px;
+  padding: 0 10px; 
+
+}
+input{ 
+  font-size: 13px;
+}
+
+- target `input` within `.info` element to set `width` to `50%` and align text to the `left`:
+  .info > input{
+  width: 50%;
+  text-align: left;
+  }
+
+
+- adjist `label` elements within `.info` width to be `10%` but not less than `55px`:
+  .info label{ 
+  width: 10%; 
+  min-width: 55px;
+}
+
+
+- Create a new ruleset that targets all `input` and `label` within `.info` and set `display` property to `inline-block`:
+  .info label, .info input{
+  display: inline-block; 
+
+}
+
+- add the following style to `.question-block`:
+.question-block 
+{
+text-align: left;
+display: block;
+width: 100%;
+margin-top: 20px;
+padding-top: 5px;
+}
+
+
+- add the following style to `h3`:
+  h3{
+  margin-top: 5px;
+padding-left: 15px;
+font-size: 22px;
+
+}
+
+
+- Remove padding and bottom border for `.question`:
+  .question{
+  border: none;
+  padding-bottom: 0;
+  }
+
+
+- Remove style and padding for `.answer-list`:
+  .answers-list{ 
+    list-style: none; 
+    padding: 0;
+  }
+
+- Give submit `button` the following `freeCodeCamp` style:
+  button{ 
+  display: block;
+margin: 40px auto;
+width: 40%;
+padding: 15px;
+font-size: 23px;
+background: #d0d0d5;
+border: 3px solid #3b3b4f;
+
+}
+
+- Adjust `footer` style:
+  footer{
+  background-color: #2a2a40;
+  display: flex;
+  justify-content: center;
+  }
+
+
+- change `footer` and `footer a` color to be visible:
+  footer, footer a{ 
+  color: #dfdf32;
+
+  }
+
 - 
 
 
+
+ 
